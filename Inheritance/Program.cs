@@ -1,5 +1,6 @@
-﻿using Inheritance.Class;
-using System.Text.RegularExpressions;
+﻿
+
+using Inheritance.Class;
 
 namespace Inheritance;
 
@@ -7,74 +8,79 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        string userName = "";
-        string passWord = "";
-        string email = "";
-        bool isSuperAdmin;
+        string username;
+        string password;
+        string email;
+        bool isAdmin;
         string section;
 
-
-        while (true) 
+        do
         {
-            Console.WriteLine("Please,enter UserName");
-            userName = Console.ReadLine();
-            if (userName.Length > 5) break;
-            Console.WriteLine("UserName must be greater than 6");
+            Console.WriteLine("Enter UserName:");
+            username = Console.ReadLine();
+        } while (User.CheckNamee(username) == false);
+
+        do
+        {
+            Console.WriteLine("Enter passWord:");
+            password = Console.ReadLine();
         }
-        while (true)
-        {
-            Console.WriteLine("Please, enter passWord:");
-            passWord = Console.ReadLine();
-            if(passWord.Length>0)
-            {
-                if ((Regex.IsMatch(passWord, @"[A-Z]")))
-                {
-                    break;
-                }
-                else  Console.WriteLine("PassWord must be a letter "); 
-            }
-            Console.WriteLine("PassWord must be greater than 0");
-        }
+        while (User.CheckPassworde(password) == false);
 
-        Console.Write("If you want to enter an email, write it down or leave it blank. ");
-        email = Console.ReadLine();
 
-        if (!string.IsNullOrWhiteSpace(email))
+        Console.WriteLine("Do you want to email? (yes/no)");
+        string chose = Console.ReadLine();
+        if (chose == "yes")
         {
-            while (!email.Contains("@") || Regex.IsMatch(email[0].ToString(), @"\W") ||  Regex.IsMatch(email[^1].ToString(), @"\W"))
+            while (true)
             {
-                Console.WriteLine("The email is not in the correct format. It must contain the '@' symbol and must not contain any special characters at the beginning/end.");
-                Console.Write("Please, enter email ");
+                Console.WriteLine("Enter email:");
                 email = Console.ReadLine();
+                if (User.CheckEmail(email)) break;
+                else Console.WriteLine("Try again.");
             }
         }
-        else
-        {
-            email = null;
-        }
+        else email = "";
 
-        
-        Console.Write("IsSuperAdmin (true/false): ");
-        while (!bool.TryParse(Console.ReadLine(), out isSuperAdmin))
-        {
-            Console.WriteLine(" Only enter 'true' or 'false'.");
-            Console.Write("IsSuperAdmin (true/false): ");
-        }
 
-        Console.Write("Please enter Section:");
         while (true)
         {
-            section = Console.ReadLine();
-            if (!string.IsNullOrWhiteSpace(section))
+            Console.WriteLine("Are you userAdmin: (yes/no)");
+            string choseAdmin = Console.ReadLine();
+            if (choseAdmin == "yes")
+            {
+                isAdmin = true;
                 break;
-            Console.WriteLine("Section in not empty");
+            }
+            else if (choseAdmin == "no")
+            {
+                isAdmin = false;
+                break;
+            }
+            else Console.WriteLine("Try again.");
         }
 
-        Admin admin = new(userName, passWord, isSuperAdmin, section, email);
-        admin.PrintInfo();
-        Console.WriteLine("Finally admin");
+        while (true)
+        {
+            Console.WriteLine("Enter section:");
+            section = Console.ReadLine();
+            if (!string.IsNullOrEmpty(section))
+            {
+                break;
+            }
+            else Console.WriteLine("Try again");
+        }
 
+
+        Admin admin = new(username, password, isAdmin, section, email);
+        Console.WriteLine("Admin create successfully");
+        Console.WriteLine(admin.GetAdminInfo());
+       
+        
 
 
     }
+
+
+
 }

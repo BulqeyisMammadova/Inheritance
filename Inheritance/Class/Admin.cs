@@ -1,26 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace Inheritance.Class;
 
-namespace Inheritance.Class
+internal class Admin : User
 {
-    internal class Admin:User
+    public bool IsSuperAdmin;
+    public string Section;
+
+    public Admin(string name, string password, bool isadmin, string section, string email = "") : base(name, password)
     {
-        public bool IsSuperAdmin;
-        public string Section;
-
-        public Admin(string userName, string passWord,  bool isSuperAdmin, string section, string email = null ) :base(userName,passWord,email)
+        if (!string.IsNullOrWhiteSpace(section))
         {
-            IsSuperAdmin = isSuperAdmin;
             Section = section;
-
         }
-
-        public void PrintInfo()
+        else
         {
-            Console.WriteLine($"Username:{UserName},PassWord:{Password},Email:{Email},IsAdmin:{IsSuperAdmin},Section:{Section}");
+            Console.WriteLine("Section can not empty.");
+            IsSuperAdmin = isadmin;
         }
     }
+
+    public string GetAdminInfo()
+    {
+        return $"Username: {UserName}\n" + $"PassWord:{Password}\n" + $"Email: {(string.IsNullOrEmpty(Email) ? "Is not Email" : Email)}\n" + $"IsSuperAdmin: {IsSuperAdmin}\n" + $"Section: {Section}";
+    }
+
 }

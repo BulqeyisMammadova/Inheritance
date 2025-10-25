@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Balqeyis\\Desktop\\Inheritance\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1DC30D98-4D6D-4CF0-B006-76143B77977E}|Inheritance\\Inheritance.csproj|c:\\users\\balqeyis\\desktop\\inheritance\\inheritance\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1DC30D98-4D6D-4CF0-B006-76143B77977E}|Inheritance\\Inheritance.csproj|solutionrelative:inheritance\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Balqeyis\\Desktop\\Inheritance\\Inheritance\\Class\\User.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Inheritance\\Class\\User.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1DC30D98-4D6D-4CF0-B006-76143B77977E}|Inheritance\\Inheritance.csproj|c:\\users\\balqeyis\\desktop\\inheritance\\inheritance\\class\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1DC30D98-4D6D-4CF0-B006-76143B77977E}|Inheritance\\Inheritance.csproj|solutionrelative:inheritance\\class\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Balqeyis\\Desktop\\Inheritance\\Inheritance\\Class\\Admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Inheritance\\Class\\Admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1DC30D98-4D6D-4CF0-B006-76143B77977E}|Inheritance\\Inheritance.csproj|c:\\users\\balqeyis\\desktop\\inheritance\\inheritance\\class\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1DC30D98-4D6D-4CF0-B006-76143B77977E}|Inheritance\\Inheritance.csproj|solutionrelative:inheritance\\class\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Balqeyis\\Desktop\\Inheritance\\Inheritance\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Inheritance\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,43 +22,44 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Balqeyis\\Desktop\\Inheritance\\Inheritance\\Class\\User.cs",
+              "RelativeDocumentMoniker": "Inheritance\\Class\\User.cs",
+              "ToolTip": "C:\\Users\\Balqeyis\\Desktop\\Inheritance\\Inheritance\\Class\\User.cs",
+              "RelativeToolTip": "Inheritance\\Class\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T02:05:37.739Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Admin.cs",
               "DocumentMoniker": "C:\\Users\\Balqeyis\\Desktop\\Inheritance\\Inheritance\\Class\\Admin.cs",
               "RelativeDocumentMoniker": "Inheritance\\Class\\Admin.cs",
               "ToolTip": "C:\\Users\\Balqeyis\\Desktop\\Inheritance\\Inheritance\\Class\\Admin.cs",
               "RelativeToolTip": "Inheritance\\Class\\Admin.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAB+AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-24T02:05:48.536Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\Balqeyis\\Desktop\\Inheritance\\Inheritance\\Class\\User.cs",
-              "RelativeDocumentMoniker": "Inheritance\\Class\\User.cs",
-              "ToolTip": "C:\\Users\\Balqeyis\\Desktop\\Inheritance\\Inheritance\\Class\\User.cs",
-              "RelativeToolTip": "Inheritance\\Class\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T02:05:37.739Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Balqeyis\\Desktop\\Inheritance\\Inheritance\\Program.cs",
               "RelativeDocumentMoniker": "Inheritance\\Program.cs",
-              "ToolTip": "C:\\Users\\Balqeyis\\Desktop\\Inheritance\\Inheritance\\Program.cs*",
-              "RelativeToolTip": "Inheritance\\Program.cs*",
-              "ViewState": "AgIAADEAAAAAAAAAAAAgwEoAAAAdAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Balqeyis\\Desktop\\Inheritance\\Inheritance\\Program.cs",
+              "RelativeToolTip": "Inheritance\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-24T02:05:02.78Z",
               "EditorCaption": ""
